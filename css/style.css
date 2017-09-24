@@ -1,0 +1,373 @@
+body {
+    color: #777777;
+    font-family: 'Roboto Slab', serif;
+}
+
+.navbar-default {
+    background-color: #0ed8d6;
+    border-bottom: 1px solid transparent;
+}
+
+.navbar-default.scrolled {
+    background: transparent;
+    transition: all 250ms ease-in;
+}
+
+.navbar-default a.navbar-brand {
+    font-family: 'Droid Serif', serif;
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-default ul li a:link {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.4s;
+}
+
+.navbar-default ul li a:visited {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+
+header {
+    background-image: url(../img/header/pictures_on_the_wall.jpg);
+    background-size: cover;
+    background-color: grey;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+header .header-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+header .header-text h1 {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+header .header-text h3 {
+    font-family: 'Droid Serif';
+}
+
+header .btn {
+    font-family: 'Montserrat';
+    margin-top: 30px;
+    background-color: #0ed8d6;
+    color: white;
+    border: 1px solid transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 200ms;
+}
+
+header .btn:hover {
+    background-color: white;
+    color: #0ed8d6;
+}
+
+
+/*headings, subheadings*/
+
+.row.text-center.heading {
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    color: #333333;
+    font-weight: 900;
+    margin-top: 100px;
+}
+
+.row.text-center.subheading {
+    font-family: 'Droid Serif';
+}
+
+
+/* end of headings, subheadings*/
+
+#services #serviceIcons {
+    margin-top: 50px;
+}
+
+#services {
+    padding-bottom: 70px;
+}
+
+#services .icon-bg {
+    background-color: #0ed8d6;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    color: white;
+    line-height: 80px;
+    font-size: 40px;
+}
+
+#services .icon-bg i {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .9s ease-in-out;
+    /*    transform: translateY(25%);*/
+}
+
+#services .icon-bg i:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+#services p {
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#portfolio {
+    background-color: #f7f7f7;
+    padding-bottom: 70px;
+}
+
+#portfolio .img-container {
+    height: 350px;
+    margin-top: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#portfolio .backgound {
+    height: 70%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: background-size 0.6s ease;
+}
+
+#portfolioImage1 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+    background-position: center center;
+}
+
+#portfolioImage2 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+    background-position: center center;
+}
+
+#portfolioImage3 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+    background-position: center center;
+}
+
+#portfolioImage4 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+    background-position: center center;
+}
+
+#portfolioImage5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+    background-position: center center;
+}
+
+#portfolioImage6 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+    background-position: center center;
+}
+
+.caption {
+    background-color: white;
+    height: 30%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#portfolio .caption h5 {
+    font-weight: bold;
+}
+
+#portfolio .portfolio-mask {
+    transition: all 200ms;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+}
+
+#portfolio .backgound:hover {
+    background-size: 130% 130%;
+}
+
+#portfolio .backgound:hover .portfolio-mask {
+    background-color: #0ed8d6;
+    opacity: 0.6;
+}
+
+#portfolio .backgound:hover .fa {
+    /*    display: block;*/
+    color: white;
+}
+
+#portfolio .backgound .fa {
+    display: block;
+    color: transparent;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all 400ms;
+    transform: translate(-44%, -39%);
+}
+
+#team .row:nth-child(3) {
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+#team .teamimage {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#team #erick {
+    background-image: url(../img/team/man-1.jpg);
+}
+
+#team #martin {
+    background-image: url(../img/team/man-2.jpg);
+}
+
+#team #anna {
+    background-image: url(../img/team/woman-1.jpg);
+}
+
+#team h5 {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+#team p {
+    text-align: center;
+}
+
+#team .icon-social {
+    text-align: center;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 0.4s;
+}
+
+#team .icon-social:hover {
+    background-color: #0ed8d6;
+}
+
+#team .row:last-child {
+    margin-bottom: 70px;
+}
+
+#contact .container-fluid {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/footer/world-map.jpg);
+    height: 700px;
+}
+
+#contact .container-fluid h1, #contact .container-fluid h4{
+    color: white;
+}
+
+#contact #form{
+    margin-top: 40px;
+}
+
+
+#contact #form input{
+    height: 60px;
+}
+
+#contact #form textarea{
+    height: 210px;
+}
+
+#contact #form textarea, #contact #form input{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#contact #form button{
+    text-transform: uppercase;
+    background-color: #0ed8d6;
+    border: 1px solid transparent;
+    color: white;
+    font-weight: bold;
+    font-family:  'Montserrat', sans-serif;
+    height: 60px;
+    font-size: 20px;
+    width: 300px;
+    margin-top: 80px;
+}
+
+
+#terms {
+    font-family: 'Montserrat', sans-serif;
+    height: 100px;
+}
+
+#terms .container .row:first-child{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#terms .icon-social{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-color: black;
+    border-radius: 50%;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#terms .icon-social:hover{
+    background-color: #0ed8d6;
+}
+
+#terms .icon-social a:link{
+    color: white;
+}
+
+
+
+/*
+font-family: 'Droid Serif', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
